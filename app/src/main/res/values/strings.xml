@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PLAMER</string>
+    <string name="play">Play Button</string>
+    <string name="bg">BackGround</string>
+    <string name="stop">Stop Button</string>
+    <string name="next">Next Button</string>
+    <string name="prev">Previous Button</string>
+    <string name="shuffle">Shuffle Button</string>
+    <string name="zeroTime">00:00</string>
+    <string name="durationTime">00:00</string>
+    <string name="repeat">Repeat Button</string>
+    <string name="albumPicture">Album Picture</string>
+</resources>
