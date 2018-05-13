@@ -10,4 +10,7 @@
     <string name="durationTime">00:00</string>
     <string name="repeat">Repeat Button</string>
     <string name="albumPicture">Album Picture</string>
+    <string name="back">Back</string>
+    <string name="songsList">Songs</string>
+    <string name="player">Player</string>
 </resources>

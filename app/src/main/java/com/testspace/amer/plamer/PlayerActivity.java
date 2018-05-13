@@ -110,7 +110,11 @@ public class PlayerActivity extends AppCompatActivity {
         }
         nowPlayingSongTextView.setText(song.getSongName());
         durationTextView.setText(song.getDuration());
-        playPauseImageButton.setImageResource(R.drawable.puse);
+        if (selectedSong.isPlaying()) {
+            playPauseImageButton.setImageResource(R.drawable.puse);
+        } else {
+            playPauseImageButton.setImageResource(R.drawable.play);
+        }
         initSongTime();
         initSeekBar();
     }
@@ -147,5 +151,9 @@ public class PlayerActivity extends AppCompatActivity {
         super.onDestroy();
         SongTimeHandler.removeCallbacks(updateSongTime);
         seekBarHandler.removeCallbacks(updateProgressSeekBar);
+    }
+
+    public void goBack(View view) {
+        this.onBackPressed();
     }
 }
